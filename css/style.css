@@ -1,0 +1,19 @@
+.add{
+    text-transform: capitalize;
+    justify-content: space-evenly;
+}
+
+.new-client-create{
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.save-changes{
+    color: #fff !important;
+    text-transform: none;
+}
+
+.white-lists{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
