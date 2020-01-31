@@ -142,9 +142,7 @@ export default {
       }
     },
     addClient(){
-      let newClientArray = this.clientArray.map(function(item){
-        return item;
-      })
+      let newClientArray = this.clientArray.map((item) => item);
       this.clientArray = newClientArray;
       for(let i = 0; i < this.clientArray.length; i++){
         if(this.clientArray[i].name === this.selectedItem){
