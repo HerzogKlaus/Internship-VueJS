@@ -31,7 +31,7 @@
             color="grey"
             @click="addClient()"
           >Добавить</v-btn>
-          <p ref="orr" class="ma-0 mt-lg-n8 body-2 font-weight-bold mt-md-10 mt-sm-10 mt-10">или</p>
+          <p class="ma-0 mt-lg-n8 body-2 font-weight-bold mt-md-10 mt-sm-10 mt-10">или</p>
           <v-btn
             text
             small
@@ -130,7 +130,7 @@ export default {
         name: "Клиент-10",
         phone: "+7 (912) 632-32-32",
         group: "ГАЗПРОМ",
-        enable: true
+        enable: false
       }
     ],
   }),
