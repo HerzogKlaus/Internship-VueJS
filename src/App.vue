@@ -1,18 +1,18 @@
 <template>
   <v-app>
   <v-content class="ma-5 pa-1">
-    <BaseLayout/>
+    <MainContent/>
   </v-content> 
   </v-app>
 </template>
 <script>
-import BaseLayout from './components/BaseLayout';
+import MainContent from './components/MainContent';
 
 export default {
   name: 'App',
 
   components: {
-    BaseLayout,
+    MainContent
   },
 
   data: () => ({
