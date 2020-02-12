@@ -26,7 +26,7 @@
 <script>
 import LeftPanel from "../components/LeftPanel";
 export default {
-  components:{
+  components: {
     LeftPanel
   },
   data: () => ({
@@ -35,70 +35,14 @@ export default {
       { text: "НОМЕР ТЕЛЕФОНА", value: "phone", sortable: false },
       { text: "ГРУППА", value: "group", sortable: false },
       { text: "", value: "action", sortable: false }
-    ],
-
-    clientArray: [
-      {
-        name: "Клиент-1",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-2",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-3",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-4",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-5",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-6",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-7",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-8",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-9",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      },
-      {
-        name: "Клиент-10",
-        phone: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ",
-        enable: false
-      }
     ]
-  })
+  }),
+  computed: {
+    clientArray() {
+      this.$store.dispatch('clientArrayFormation');
+      return this.$store.getters.clientGetter;
+    },
+  },
+
 };
 </script>

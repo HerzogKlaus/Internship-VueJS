@@ -26,25 +26,20 @@
 <script>
 import LeftPanel from "../components/LeftPanel";
 export default {
-  components:{
+  components: {
     LeftPanel
   },
   data: () => ({
-      headers: [
-      { text: "Название", align: "left", value: "name", sortable: false },
-    ],
-    groupArray: [
-        {name: "Группа-1"},
-        {name: "Группа-2"},
-        {name: "Группа-3"},
-        {name: "Группа-4"},
-        {name: "Группа-5"},
-        {name: "Группа-6"},
-        {name: "Группа-7"},
-        {name: "Группа-8"},
-        {name: "Группа-9"},
-        {name: "Группа-10"},
+    headers: [
+      { text: "Название", align: "left", value: "name", sortable: false }
     ]
-  })
+  }),
+  computed:{
+    groupArray() {
+      this.$store.dispatch('groupArrayFormation');
+      return this.$store.getters.groupGetter;
+    }
+  }
+
 };
 </script>
