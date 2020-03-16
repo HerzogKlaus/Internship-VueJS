@@ -1,0 +1,22 @@
+.add{
+    text-transform: none;
+    justify-content: space-evenly;
+}
+
+.new-client-create{
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.save-changes{
+    text-transform: none;
+}
+
+.white-lists{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.pencil{
+    cursor: pointer;
+}
