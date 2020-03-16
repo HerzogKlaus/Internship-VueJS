@@ -30,24 +30,23 @@ export default {
   },
   data: () => ({
     headers: [
-      { text: "Название", align: "left", value: "group", sortable: false }
+      { text: "Группа", align: "left", value: "group", sortable: false }
     ]
   }),
-
-  computed: {
-    groupArray() {
-      return this.$store.getters.allGroups;
+  computed:{
+    groupArray(){
+      return this.$store.getters.allClients;
     }
   },
-
-  mounted() {
-    this.updateGroups();
+  mounted(){
+    this.initClients();
   },
-
   methods: {
-    initGroups() {
-      this.$store.dispatch("fetchGroups");
+    initClients(){
+      this.$store.dispatch('fetchClients');
     }
   }
 };
 </script>
+
+

@@ -424,24 +424,6 @@
       "address": "396 Coffey Street, Bowden, Minnesota, 4527"
     },
     {
-      "id": 49,
-      "name": "Aguilar Walsh",
-      "isActive": false,
-      "group": "Anivet",
-      "email": "undefined.undefined@undefined.com",
-      "phone": "+7 (935) 526-2468",
-      "address": "535 Crawford Avenue, Omar, Palau, 4648"
-    },
-    {
-      "id": 50,
-      "name": "Staci Mclaughlin",
-      "isActive": false,
-      "group": "Geologix",
-      "email": "undefined.undefined@undefined.ca",
-      "phone": "+7 (845) 507-2415",
-      "address": "339 Ludlam Place, Saticoy, Wyoming, 456"
-    },
-    {
       "id": 51,
       "name": "Marissa Dickerson",
       "isActive": true,
@@ -557,6 +539,15 @@
       "email": "undefined.undefined@undefined.net",
       "phone": "+7 (955) 520-3481",
       "address": "726 Bay Parkway, Thomasville, Hawaii, 3465"
+    },
+    {
+      "name": "q",
+      "isActive": true,
+      "group": "Eternis",
+      "email": "q@mail.ru",
+      "phone": "+77777777777",
+      "address": "qwqwqw",
+      "id": 64
     }
   ]
 }
