@@ -5,6 +5,8 @@ import vuetify from './plugins/vuetify';
 import VueRouter from 'vue-router';
 import router from './routes'
 Vue.use(VueRouter)
+import VueMask from 'v-mask'
+Vue.use(VueMask);
 import '../css/style.css'
 Vue.config.productionTip = false
 
@@ -12,5 +14,5 @@ new Vue({
   vuetify,
   render: h => h(App),
   router,
-  store
+  store,
 }).$mount('#app')

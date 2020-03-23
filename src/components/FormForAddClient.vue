@@ -5,7 +5,7 @@
     </v-btn>
     <v-text-field v-model="name" :counter="60" :rules="nameRules" label="Имя" required></v-text-field>
     <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-    <v-text-field v-model="phone" :counter="12" :rules="phoneRules" label="Номер телефона" required></v-text-field>
+    <v-text-field v-model="phone" :counter="17" :rules="phoneRules" label="Номер телефона" required v-mask="'+7 (###) ###-####'"></v-text-field>
     <v-text-field v-model="address" :counter="100" :rules="addressRules" label="Адрес" required></v-text-field>
     <v-select :items="allClients" item-text="group" label="Группа" v-model="select"></v-select>
     <v-btn :disabled="!valid" color="success" class="mr-4" @click="addClient()">Сохранить</v-btn>
@@ -32,7 +32,7 @@ export default {
     isActive: true,
     phoneRules: [
       v => !!v || "Это поле обязательно к заполнению",
-      v => (v && v.length <= 12) || "Не более 12 символов"
+      v => (v && v.length <= 17) || "Не более 12 символов"
     ],
     address: "",
     addressRules: [
@@ -50,7 +50,7 @@ export default {
   },
 
   mounted() {
-    this.initGroups();
+    this.initClients();
   },
 
   methods: {
@@ -74,6 +74,7 @@ export default {
         phone: this.phone,
         address: this.address
       });
+      this.$router.push("/");
     }
   }
 };

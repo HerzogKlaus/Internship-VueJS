@@ -2,11 +2,11 @@
   "clients": [
     {
       "id": 1,
-      "name": "Hull Flores333",
+      "name": "Hull Flores111133",
       "isActive": false,
       "group": "Vitricomp",
       "email": "undefined.undefined@undefined.com",
-      "phone": "+7 (859) 513-3778",
+      "phone": "+7 (868) 878-6785",
       "address": "618 Banner Avenue, Navarre, Northern Mariana Islands, 4042"
     },
     {
@@ -451,24 +451,6 @@
       "address": "716 Waldane Court, Martinsville, South Dakota, 633"
     },
     {
-      "id": 54,
-      "name": "Leta Guzman",
-      "isActive": false,
-      "group": "Nexgene",
-      "email": "undefined.undefined@undefined.us",
-      "phone": "+7 (843) 492-3579",
-      "address": "496 Folsom Place, Jardine, Puerto Rico, 9165"
-    },
-    {
-      "id": 55,
-      "name": "Camille Sanchez",
-      "isActive": false,
-      "group": "Hyplex",
-      "email": "undefined.undefined@undefined.biz",
-      "phone": "+7 (889) 506-2814",
-      "address": "241 Hegeman Avenue, Nanafalia, Tennessee, 9926"
-    },
-    {
       "id": 56,
       "name": "Marta Webb",
       "isActive": true,
@@ -541,12 +523,12 @@
       "address": "726 Bay Parkway, Thomasville, Hawaii, 3465"
     },
     {
-      "name": "q",
+      "name": "qwerty",
       "isActive": true,
       "group": "Eternis",
-      "email": "q@mail.ru",
-      "phone": "+77777777777",
-      "address": "qwqwqw",
+      "email": "qwerty@mail.ru",
+      "phone": "+7 (919) 360-9291",
+      "address": "tyytyt",
       "id": 64
     }
   ]

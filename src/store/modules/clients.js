@@ -46,8 +46,6 @@ export default {
         clientsData
       );
 
-      console.log(clients.data);
-
       commit("editClients", clients.data);
     }
   },

@@ -9,7 +9,7 @@
         <v-form class="px-3" ref="form">
           <v-text-field label="Имя" v-model="name" :rules="nameRules"></v-text-field>
           <v-text-field label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
-          <v-text-field label="Телефон" v-model="phone" :rules="phoneRules"></v-text-field>
+          <v-text-field label="Телефон" v-model="phone" :rules="phoneRules" v-mask="'+7 (###) ###-####'"></v-text-field>
           <v-text-field label="Адрес" v-model="address"></v-text-field>
           <v-select :items="allClients" item-text="group" label="Группа" v-model="group"></v-select>
           <v-btn class="mx-3 mt-3" color="success" @click="editClient(dataClient.id)">Изменить</v-btn>
